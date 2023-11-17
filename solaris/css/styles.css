@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Secular One;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.09em;
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.6em;
+    color: #FFD029;
+}
+
+p {
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.page-title {
+    margin: 72px 36px auto auto;
+}
+
+.solaris {
+    text-align: right;
+}
+
+
+.sun {
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    top: -220px;
+    left: -1280px;
+    background: #FFD029;
+    box-shadow: 0px 0px 250px 0px #FFD02933;
+    border-radius: 50%;
+}
+
+.planets {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: -160px 0 auto 0;
+}
+
+.mercury {
+    width: 14px;
+    height: 14px;
+    background: #888888;
+    border-radius: 50%;
+}
+
+.venus {
+    width: 26px;
+    height: 26px;
+    background: #E7CDCD;
+    border-radius: 50%;
+}
+
+.earth {
+    width: 28px;
+    height: 28px;
+    background: #428ED4;
+    border-radius: 50%;
+}
+
+.mars {
+    width: 14px;
+    height: 14px;
+    background: #EF5F5F;
+    border-radius: 50%;
+}
+
+.jupiter {
+    width: 188px;
+    height: 188px;
+    background: #E29468;
+    border-radius: 50%;
+}
+
+.saturn {
+    width: 144px;
+    height: 144px;
+    background: #C7AA72;
+    border-radius: 50%;
+    position: relative;
+}
+
+.saturn-ring {
+    width: 218.23px;
+    height: 5.5px;
+    background: #FFFFFF66;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.uranus {
+    width: 66px;
+    height: 66px;
+    background: #C9D4F1;
+    border-radius: 50%;
+}
+
+.neptune {
+    width: 66px;
+    height: 66px;
+    background: #7A91A7;
+    border-radius: 50%;
+}
+
+/* css för allt i modalen*/
+
+  .modal-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+  }
+  
+  .close {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  .planet-info {
+    width: 50%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line {
+    width: 100%;
+    border: 1px solid #FFFFFF33;
+    margin: 20px 0 20px 0;
+  }
+
+  .info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-title {
+    font-family: Secular One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    margin: 18px 0 4px 0;
+  }
+
+  .info-text {
+    font-family: Roboto Condensed;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0.16em;
+    text-align: left;
+    margin: 4px 0 18px 0;
+  }
